@@ -1,0 +1,23 @@
+<routes>
+    <!-- Define Vehicle Types -->
+    <vType id="platoon_leader" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="30" />
+    <vType id="platoon_follower" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="1.0" maxSpeed="30" />
+
+    <!-- Straight Routes -->
+    <route id="horizontal" edges="n_t t_s" />  <!-- North to South -->
+    <route id="route_sn_straight" edges="s_t t_n" />  <!-- South to North -->
+    <route id="route_we_straight" edges="w_t t_e" />  <!-- West to East -->
+    <route id="route_ew_straight" edges="e_t t_w" />  <!-- East to West -->
+
+    <!-- Left Turn Routes -->
+    <route id="route_nw_left" edges="n_t t_w" />  <!-- North to West -->
+    <route id="route_se_left" edges="s_t t_e" />  <!-- South to East -->
+    <route id="route_en_left" edges="e_t t_n" />  <!-- East to North -->
+    <route id="route_ws_left" edges="w_t t_s" />  <!-- West to South -->
+
+    <!-- Right Turn Routes -->
+    <route id="route_ne_right" edges="n_t t_e" />  <!-- North to East -->
+    <route id="route_sw_right" edges="s_t t_w" />  <!-- South to West -->
+    <route id="route_es_right" edges="e_t t_s" />  <!-- East to South -->
+    <route id="route_wn_right" edges="w_t t_n" />  <!-- West to North -->
+</routes>

@@ -1,0 +1,13 @@
+<configuration>
+    <input>
+        <net-file value="single-intersection.net.xml"/>
+        <route-files value="single-intersection.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="2000"/>  <!-- Reduced from 100000 for platoon analysis -->
+    </time>
+    <processing>
+        <step-length value="0.1"/>  <!-- Higher resolution for platoon dynamics -->
+    </processing>
+</configuration>
